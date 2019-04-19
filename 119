@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+
+spawn ssh yhwu@202.127.24.199
+expect "*password*"
+	send "wuyiheng1234\r"
+expect "$*"
+	send "ssh yhwu@119.78.226.23\r"
+expect "*Password*"
+	send "wuyiheng1234\r"
+interact
